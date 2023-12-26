@@ -11,7 +11,7 @@ public class ImageController {
     @RequestMapping("displayImage")
     public String dispImg(Model model, @RequestParam() String imagePath ) {
         model.addAttribute("imagePath", imagePath);
-        return "firstImg";
+        return "dispImg";
     }
 
     @RequestMapping("displayAll")
