@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            background-color:rgba(114, 114, 114, 0.72);
             margin: 0;
             padding: 0;
             text-align: center;

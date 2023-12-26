@@ -10,7 +10,7 @@
             margin: 0;
             padding: 20px;
             text-align: center;
-            background-color: #f4f4f4; /* Set your desired background color here */
+            background-color: rgba(114, 114, 114, 0.72); /* Set your desired background color here */
         }
 
         h2 {
