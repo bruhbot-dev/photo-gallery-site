@@ -37,9 +37,9 @@ public class Image {
     @Override
     public String toString() {
         return
-                "filename='" + filename + '\'' +
-                ", location='" + location + '\'' +
-                ", camera='" + camera + '\'' ;
+                "filename= " + filename +
+                ", location= " + location +
+                ", camera= " + camera  ;
     }
 }
 
