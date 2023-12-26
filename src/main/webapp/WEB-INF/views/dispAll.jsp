@@ -1,15 +1,51 @@
-<%@ taglib prefix="c" uri="jakarta.tags.core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Display All Images</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .image-container {
+            margin-top: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        img {
+            width: 100%; /* Responsive width */
+            max-width: 320px; /* Maximum width for larger screens */
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid #ccc; /* Add a border for clarity */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+    </style>
 </head>
 <body>
-<h2>displaying all images:</h2>
+<h2>Displaying All Images</h2>
 <c:forEach var="image" items="${images}">
-<a href="http://localhost:8080/displayImage?imagePath=${image.getFilename()}">
-    <img src="http://localhost:8080/images/${image.getFilename()}" alt="Image" style="width: 320px; height: 180px; object-fit: cover;"/>
-</a>
-    </c:forEach>
+    <div class="image-container">
+        <a href="http://localhost:8080/displayImage?imagePath=${image.getFilename()}">
+            <img src="http://localhost:8080/images/${image.getFilename()}" alt="Image"/>
+        </a>
+    </div>
+</c:forEach>
 </body>
 </html>
