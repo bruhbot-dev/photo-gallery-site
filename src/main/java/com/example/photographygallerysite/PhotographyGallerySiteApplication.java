@@ -1,5 +1,6 @@
 package com.example.photographygallerysite;
 
+import com.example.photographygallerysite.Model.Image;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -19,6 +20,9 @@ public class PhotographyGallerySiteApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+
+        Image firstImg = new Image();
+        Image.setFilename("firstImg.jpg");
 
     }
 }
