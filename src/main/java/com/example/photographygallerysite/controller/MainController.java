@@ -13,4 +13,9 @@ public class MainController {
         return "start";
     }
 
+    @RequestMapping("firstImg")
+    public String firstImg() {
+        return "firstImg";
+    }
+
 }
