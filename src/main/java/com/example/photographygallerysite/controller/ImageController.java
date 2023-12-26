@@ -9,8 +9,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class ImageController {
 
     @RequestMapping("displayImage")
-    public String firstImg(Model model, @RequestParam() String imagePath ) {
+    public String dispImg(Model model, @RequestParam() String imagePath ) {
         model.addAttribute("imagePath", imagePath);
         return "firstImg";
+    }
+
+    @RequestMapping("displayAll")
+    public String dispAll(Model model){
+
+        return "dispALl";
     }
 }
