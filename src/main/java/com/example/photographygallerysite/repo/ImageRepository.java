@@ -1,4 +1,7 @@
 package com.example.photographygallerysite.repo;
 
-public class ImageRepository {
+import com.example.photographygallerysite.Model.Image;
+import org.springframework.data.repository.CrudRepository;
+
+public interface ImageRepository extends CrudRepository<Image, String> {
 }
