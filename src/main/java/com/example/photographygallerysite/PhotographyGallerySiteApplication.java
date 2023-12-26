@@ -23,10 +23,14 @@ public class PhotographyGallerySiteApplication implements CommandLineRunner {
 
         Image firstImg = new Image();
         firstImg.setFilename("firstImg.jpg");
+        firstImg.setLocation("Hartlepool");
+        firstImg.setCamera("Old Nikon");
         repo.save(firstImg);
 
         Image DSC_0393 = new Image();
         DSC_0393.setFilename("DSC_0393.JPG");
+        DSC_0393.setLocation("Hartlepool");
+        DSC_0393.setCamera("Old Nikon");
         repo.save(DSC_0393);
     }
 }

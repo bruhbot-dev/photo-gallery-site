@@ -7,6 +7,8 @@ import jakarta.persistence.Id;
 public class Image {
         @Id
         private String filename;
+        private String location;
+        private String camera;
 
     public void setFilename(String filename) {
         this.filename = filename;
@@ -14,6 +16,22 @@ public class Image {
 
     public String getFilename() {
         return filename;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getCamera() {
+        return camera;
+    }
+
+    public void setCamera(String camera) {
+        this.camera = camera;
     }
 }
 
