@@ -9,7 +9,7 @@ public class Image {
         @Id
         private String filename;
 
-    public static void setFilename(String filename) {
+    public void setFilename(String filename) {
         this.filename = filename;
     }
 }

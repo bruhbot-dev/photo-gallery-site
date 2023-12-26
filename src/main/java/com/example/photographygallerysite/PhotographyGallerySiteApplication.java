@@ -22,7 +22,7 @@ public class PhotographyGallerySiteApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         Image firstImg = new Image();
-        Image.setFilename("firstImg.jpg");
+        firstImg.setFilename("firstImg.jpg");
 
     }
 }
