@@ -8,6 +8,6 @@
 <body>
 <h2>Displaying Image</h2>
 
-<img src="http://localhost:8080/images/firstImg.jpg" alt="Image"/>
+<img src="http://localhost:8080/images/${imagePath}" alt="Image"/>
 </body>
 </html>

@@ -4,7 +4,7 @@ package com.example.photographygallerysite.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
+import org.springframework.web.bind.annotation.RequestParam;
 
 
 @Controller
@@ -15,10 +15,8 @@ public class MainController {
         return "start";
     }
 
-    @RequestMapping("firstImg")
-    public String firstImg(Model model) {
-        String imagePath = "firstImg.jpg";
-
+    @RequestMapping("displayImage")
+    public String firstImg(Model model, @RequestParam() String imagePath ) {
         model.addAttribute("imagePath", imagePath);
         return "firstImg";
     }
