@@ -16,6 +16,7 @@ public class ImageController {
     @RequestMapping("displayImage")
     public String dispImg(Model model, @RequestParam() String imagePath ) {
         model.addAttribute("imagePath", imagePath);
+        model.addAttribute("image", repo.findById(imagePath));
         return "dispImg";
     }
 

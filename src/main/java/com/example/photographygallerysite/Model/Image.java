@@ -33,6 +33,14 @@ public class Image {
     public void setCamera(String camera) {
         this.camera = camera;
     }
+
+    @Override
+    public String toString() {
+        return
+                "filename='" + filename + '\'' +
+                ", location='" + location + '\'' +
+                ", camera='" + camera + '\'' ;
+    }
 }
 
 
