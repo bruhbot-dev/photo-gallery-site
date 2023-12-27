@@ -20,11 +20,12 @@
 
         .image-container {
             margin-top: 20px;
+            display: inline-block; /* Display images horizontally */
+            margin-right: 10px; /* Optional margin between images */
         }
 
         a {
             display: inline-block;
-            margin: 10px;
             text-decoration: none;
             color: #333;
         }
@@ -34,7 +35,7 @@
             max-width: 320px; /* Maximum width for larger screens */
             height: auto; /* Maintain aspect ratio */
             border: 1px solid #ccc; /* Add a border for clarity */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
         }
     </style>
 </head>
