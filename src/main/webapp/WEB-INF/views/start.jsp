@@ -7,26 +7,29 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: rgba(114, 114, 114, 0.72);
+            background-color: rgb(255, 253, 247);
             margin: 0;
             padding: 0;
             text-align: center;
         }
 
-        h2 {
+        h1 {
             color: #333;
             margin-top: 50px;
+            font-family: 'Corben', Georgia, Times, serif;
+            color: rgb(38, 24, 24);
         }
 
         a {
             display: inline-block;
             padding: 10px 20px;
             margin-top: 20px;
-            background-color: #2c2c2c;
+            background-color: rgb(38, 24, 24);
             color: #fff;
             text-decoration: none;
             border-radius: 2px;
             transition: background-color 0.3s;
+            font-family: 'Nobile', Helvetica, Arial, sans-serif;
         }
 
         a:hover {
@@ -42,7 +45,7 @@
         .mySlides {
             display: none;
             width: 100%;
-            animation: fade 7s linear ; /* Adjust the duration as needed */
+            animation: fade 7s linear; /* Adjust the duration as needed */
         }
 
         @keyframes fade {
@@ -70,11 +73,21 @@
         .w3-badge-active {
             background-color: #4285f4;
         }
+
+        /* Content separator styling */
+        .separator {
+            border-top: 2px solid #ccc;
+            margin: 20px auto;
+            width: 57%;
+            opacity: 50%;
+        }
     </style>
 </head>
 <body>
 
-<h2>Photography by Oliver Johnson</h2>
+<h1>Photography by Oliver Johnson</h1>
+
+<div class="separator"></div>
 
 <div class="slideshow-container w3-content w3-section">
     <div class="mySlides w3-animate-fading">
@@ -93,6 +106,8 @@
         <img src="http://localhost:8080/images/DSC_0383.jpg" style="width:100%">
     </div>
 </div>
+
+<div class="separator"></div>
 
 <script>
     var myIndex = 0;
