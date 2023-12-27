@@ -16,6 +16,8 @@
         h2 {
             color: #333;
             margin-top: 20px;
+            font-family: 'Corben', Georgia, Times, serif;
+
         }
 
         .image-container {
@@ -37,10 +39,18 @@
             border: 1px solid #ccc; /* Add a border for clarity */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
         }
+
+        .separator {
+            border-top: 2px solid #ccc;
+            margin: 20px auto;
+            width: 57%;
+            opacity: 50%;
+        }
     </style>
 </head>
 <body>
 <h2>Displaying All Images</h2>
+<div class="separator"></div>
 <c:forEach var="image" items="${images}">
     <div class="image-container">
         <a href="http://localhost:8080/displayImage?imagePath=${image.getFilename()}">
