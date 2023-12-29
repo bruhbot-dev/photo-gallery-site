@@ -37,7 +37,7 @@
         }
 
         .slideshow-container {
-            max-width: 1000px;
+            max-width: 750px;
             margin: auto;
             position: relative;
         }
@@ -91,19 +91,19 @@
 
 <div class="slideshow-container w3-content w3-section">
     <div class="mySlides w3-animate-fading">
-        <img src="http://localhost:8080/images/firstImg.jpg" style="width:100%">
+        <img src="http://90.214.201.229:8080/images/firstImg.jpg" style="width:100%">
     </div>
 
     <div class="mySlides w3-animate-fading">
-        <img src="http://localhost:8080/images/DSC_0393.JPG" style="width:100%">
+        <img src="http://90.214.201.229:8080/images/DSC_0393.JPG" style="width:100%">
     </div>
 
     <div class="mySlides w3-animate-fading">
-        <img src="http://localhost:8080/images/DSC_0348.jpg" style="width:100%">
+        <img src="http://90.214.201.229:8080/images/DSC_0348.jpg" style="width:100%">
     </div>
 
     <div class="mySlides w3-animate-fading">
-        <img src="http://localhost:8080/images/DSC_0383.jpg" style="width:100%">
+        <img src="http://90.214.201.229:8080/images/DSC_0383.jpg" style="width:100%">
     </div>
 </div>
 
@@ -127,7 +127,7 @@
     }
 </script>
 
-<a href="http://localhost:8080/displayAll">See all pictures</a>
+<a href="http://90.214.201.229:8080/displayAll">See all pictures</a>
 
 </body>
 </html>

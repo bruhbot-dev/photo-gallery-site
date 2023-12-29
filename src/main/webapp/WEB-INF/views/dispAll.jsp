@@ -53,8 +53,8 @@
 <div class="separator"></div>
 <c:forEach var="image" items="${images}">
     <div class="image-container">
-        <a href="http://localhost:8080/displayImage?imagePath=${image.getFilename()}">
-            <img src="http://localhost:8080/images/${image.getFilename()}" alt="Image"/>
+        <a href="http://90.214.201.229:8080/displayImage?imagePath=${image.getFilename()}">
+            <img src="http://90.214.201.229:8080/images/${image.getFilename()}" alt="Image"/>
         </a>
     </div>
 </c:forEach>
