@@ -45,7 +45,7 @@
 <body>
 <h2>Displaying Image</h2>
 <div class="separator"></div>
-<img src="http://90.214.201.229:8080/images/${imagePath}" alt="Image"/>
+<img src="http://localhost:8080/images/${imagePath}" alt="Image"/>
 <p>${image.toString()}</p>
 </body>
 </html>

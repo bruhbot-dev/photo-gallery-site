@@ -7,9 +7,9 @@ plugins {
 }
 
 group = 'com.example'
-version = '0.0.1-SNAPSHOT'
 version = "0.0.1-SNAPSHOT"
-apply(plugin = "war")
+//apply(plugin = "war")
+apply plugin: "war"
 
 
 java {
